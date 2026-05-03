@@ -1,19 +1,160 @@
-<!DOCTYPE html>
-<html>
+i<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Veterans Helping Veterans</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VETERAN'S BENIFIT'S COMMAND LLC</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #1f2937;
+      background: #f8fafc;
+      line-height: 1.6;
+    }
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h2 { margin: 0; }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(rgba(15,23,42,.75), rgba(15,23,42,.75)),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 120px 8%;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 44px;
+      margin-bottom: 16px;
+    }
+    .hero p {
+      font-size: 20px;
+      max-width: 760px;
+      margin: 0 auto 30px;
+    }
+    .button {
+      background: #2563eb;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 70px 8%;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 10px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.08);
+    }
+    .card h3 { margin-top: 0; color: #0f172a; }
+    .center { text-align: center; }
+    .contact {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+    }
+    footer {
+      background: #020617;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Your Friend’s Business Name</h1>
-  <p>Helping veterans understand and pursue their benefits.</p>
 
-  <h2>Services</h2>
-  <p>VA disability guidance, document review, and consultation support.</p>
+<header>
+  <h2>VETERAN'S BENEFIT'S COMMAND LLC</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <h2>About</h2>
-  <p>Veteran-led support for veterans and families.</p>
+<div class="hero">
+  <h1>Helping Veterans Understand Their Benefits</h1>
+  <p>Practical guidance for veterans and families navigating VA disability benefits, documentation, and next steps.</p>
+  <a class="button" href="#contact">Request a Consultation</a>
+</div>
 
-  <h2>Contact</h2>
-  <p>Email: example@email.com</p>
+<section id="about">
+  <div class="center">
+    <h2>Veteran-Led Support</h2>
+    <p>We help veterans better understand the VA benefits process with clear, practical, and compassionate guidance.</p>
+  </div>
+</section>
+
+<section id="services">
+  <h2 class="center">Our Services</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Benefits Guidance</h3>
+      <p>Helping veterans understand possible benefit paths and the documentation needed to support their claim.</p>
+    </div>
+    <div class="card">
+      <h3>Document Review</h3>
+      <p>Reviewing medical records, service history, and supporting documents to help veterans prepare more clearly.</p>
+    </div>
+    <div class="card">
+      <h3>Consultation Support</h3>
+      <p>One-on-one conversations to help veterans organize their next steps with confidence.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="center">Why Work With Us</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Clear Process</h3>
+      <p>No confusing language. We explain things in a way veterans and families can understand.</p>
+    </div>
+    <div class="card">
+      <h3>Veteran Focused</h3>
+      <p>Built around the real experiences of veterans navigating complex benefit systems.</p>
+    </div>
+    <div class="card">
+      <h3>Personal Support</h3>
+      <p>Guidance designed around your situation, not a one-size-fits-all approach.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <p>Email: vbcllc@gmail.com</p>
+  <p>Phone: +63-000-000-0000</p>
+  <p>Serving veterans and families worldwide.</p>
+</section>
+
+<footer>
+  <p>© 2026 Veteran Benefits Support. All rights reserved.</p>
+  <p>Disclaimer: This site provides informational guidance only and is not affiliated with the U.S. Department of Veterans Affairs.</p>
+</footer>
+
 </body>
 </html>
