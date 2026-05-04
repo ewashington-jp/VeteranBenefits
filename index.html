@@ -240,6 +240,131 @@
       .calc-wrap { padding: 24px 16px; }
       .rating-row { flex-direction: column; align-items: flex-start; }
     }
+  
+    /* ── SLEEP CARE ── */
+    #sleep { background: #f0f9ff; }
+    .sleep-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+    .sleep-card {
+      background: white;
+      border-radius: 10px;
+      padding: 28px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.08);
+      border-top: 4px solid #2563eb;
+    }
+    .sleep-card h3 { margin-top: 0; color: #0f172a; font-size: 17px; }
+    .sleep-card .rating-badge {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      font-weight: bold;
+      font-size: 13px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    .urgent-box {
+      background: #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 18px 22px;
+      border-radius: 6px;
+      margin-top: 28px;
+      font-size: 15px;
+      color: #78350f;
+    }
+    .urgent-box strong { color: #92400e; }
+
+    /* ── PARTNERS ── */
+    #partners { background: #0f172a; color: white; }
+    #partners h2 { color: white; }
+    #partners p.sub { color: #94a3b8; text-align: center; max-width: 680px; margin: 0 auto 40px; }
+    .partner-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+    }
+    .partner-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px;
+      padding: 30px 24px;
+    }
+    .partner-card .partner-tag {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #f59e0b;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .partner-card h3 { color: white; margin-top: 0; font-size: 18px; }
+    .partner-card p { color: #94a3b8; font-size: 14px; line-height: 1.7; }
+    .partner-card a {
+      color: #60a5fa;
+      font-size: 14px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .partner-card a:hover { text-decoration: underline; }
+
+    /* ── DD214 ── */
+    #dd214 { background: #f8fafc; }
+    .dd214-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+      margin-top: 30px;
+    }
+    .dd214-info h3 { color: #0f172a; margin-top: 0; }
+    .dd214-steps { list-style: none; padding: 0; margin: 0; }
+    .dd214-steps li {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 18px;
+      align-items: flex-start;
+    }
+    .dd214-steps .step-num {
+      background: #2563eb;
+      color: white;
+      font-weight: bold;
+      min-width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .dd214-steps .step-text { color: #374151; font-size: 15px; padding-top: 4px; }
+    .dd214-cta {
+      background: #0f172a;
+      color: white;
+      border-radius: 12px;
+      padding: 36px 30px;
+    }
+    .dd214-cta h3 { margin-top: 0; color: #93c5fd; }
+    .dd214-cta p { color: #cbd5e1; font-size: 15px; }
+    .dd214-cta .btn-dd214 {
+      display: inline-block;
+      background: #f59e0b;
+      color: #0f172a;
+      font-weight: bold;
+      padding: 13px 26px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    @media (max-width: 680px) {
+      .dd214-wrap { grid-template-columns: 1fr; }
+      nav a { margin-left: 10px; font-size: 13px; }
+    }
+
   </style>
 </head>
 <body>
@@ -283,7 +408,10 @@
   <nav>
     <a href="#about">About</a>
     <a href="#services">Services</a>
+    <a href="#sleep">Sleep Care</a>
     <a href="#calculator">Calculator</a>
+    <a href="#partners">Partners</a>
+    <a href="#dd214">DD214</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
@@ -409,6 +537,153 @@
       ⚠️ This calculator provides an <em>estimate only</em> and is not affiliated with the U.S. Department of Veterans Affairs.
       Actual ratings and pay may differ. Contact us or a VSO for personalized guidance.
     </p>
+  </div>
+</section>
+
+
+<!-- GLOBAL SLEEP CARE -->
+<section id="sleep">
+  <h2 class="center">Global Sleep Care for Veterans</h2>
+  <p class="center" style="color:#475569;max-width:720px;margin:0 auto;">
+    Sleep disorders — especially <strong>Sleep Apnea</strong> — are among the most common and
+    underrated service-connected conditions. Over <strong>52% of veterans</strong> suffer from sleep apnea,
+    yet many have never filed a claim. We help veterans understand and pursue the ratings they deserve.
+  </p>
+
+  <div class="sleep-grid">
+    <div class="sleep-card">
+      <span class="rating-badge">VA Rating: 50%</span>
+      <h3>Obstructive Sleep Apnea (OSA)</h3>
+      <p>The most common type among veterans. If you require a CPAP machine, you currently qualify for a
+      <strong>50% VA disability rating</strong> — worth over $1,100/month. Linked to PTSD, TBI, obesity,
+      and environmental exposures during service.</p>
+    </div>
+    <div class="sleep-card">
+      <span class="rating-badge">VA Rating: 30%–50%</span>
+      <h3>Central & Mixed Sleep Apnea</h3>
+      <p>Less common but serious. Central sleep apnea is often tied to neurological conditions and traumatic
+      brain injury — both highly prevalent among combat veterans. We help document the service connection.</p>
+    </div>
+    <div class="sleep-card">
+      <span class="rating-badge">Secondary Conditions</span>
+      <h3>Sleep Apnea Secondary Claims</h3>
+      <p>Sleep apnea rated as secondary to PTSD, hypertension, or other service-connected conditions can
+      significantly boost your combined rating. We coach veterans on how to build the evidence trail
+      with a Nexus letter and sleep study results.</p>
+    </div>
+    <div class="sleep-card">
+      <span class="rating-badge">Global Support</span>
+      <h3>Support for Overseas Veterans</h3>
+      <p>Through our <strong>Global Sleep Care</strong> program, we help veteran expats worldwide navigate
+      the Foreign Medical Program (FMP) to access sleep studies and CPAP treatment — even outside the U.S.
+      VA system.</p>
+    </div>
+  </div>
+
+  <div class="urgent-box">
+    ⚠️ <strong>URGENT — Act Before Rating Changes Take Effect:</strong> The VA has proposed eliminating
+    the automatic 50% rating for CPAP users. Veterans who file <em>before</em> the new rules take effect
+    will be protected. If you have sleep apnea and have not yet filed, <a href="#contact">contact us today</a>.
+    <br><br>
+    <em>Disclaimer: This is educational guidance only. We are not VA-accredited agents and do not represent
+    veterans before the VA.</em>
+  </div>
+</section>
+
+<!-- PARTNERS & AFFILIATES -->
+<section id="partners">
+  <h2 class="center">Partners &amp; Affiliates</h2>
+  <p class="sub">We collaborate with trusted organizations that share our commitment to serving veterans,
+  military families, and their communities worldwide.</p>
+
+  <div class="partner-grid">
+    <div class="partner-card">
+      <div class="partner-tag">Combat Sports &amp; Community</div>
+      <h3>UGB MMA</h3>
+      <p>UGB MMA is a combat sports promotion with a mission of <strong>"Beating Up Poverty."</strong>
+      Since April 28, 2013, UGB MMA has produced over 82 fight events and operates fighter scholarship
+      programs for aspiring martial artists — many of whom are veterans and military family members.</p>
+      <p>Their advocacy aligns with our belief that disciplined, community-driven organizations uplift
+      veteran communities beyond the benefits office.</p>
+    </div>
+    <div class="partner-card">
+      <div class="partner-tag">Business &amp; Commerce</div>
+      <h3>United States Veterans Chamber of Commerce (USVCC)</h3>
+      <p>The <strong>USVCC</strong> is a national network that connects veteran-owned businesses,
+      provides resources for veteran entrepreneurs, and advocates for economic opportunities for those
+      who served. We proudly support their mission and refer veterans seeking business development
+      resources to their network.</p>
+    </div>
+    <div class="partner-card">
+      <div class="partner-tag">Travel &amp; Logistics</div>
+      <h3>Amega Travel &amp; Tours</h3>
+      <p>With over <strong>21 years of service</strong>, Amega Travel and Tours supports veterans and
+      military families with quality travel services — especially important for veteran expats navigating
+      international relocations, medical travel, and family reunification.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DD214 -->
+<section id="dd214">
+  <h2 class="center">Your DD214 — The Gateway to VA Benefits</h2>
+  <p class="center" style="color:#475569;max-width:680px;margin:0 auto;">
+    The DD214 (Certificate of Release or Discharge from Active Duty) is the single most important
+    document a veteran needs to claim VA benefits. Without it, most claims cannot proceed.
+  </p>
+
+  <div class="dd214-wrap">
+    <div class="dd214-info">
+      <h3>Why Your DD214 Matters</h3>
+      <p style="color:#374151;">The DD214 proves your military service dates, character of discharge,
+      and service branch — all required for VA disability claims, healthcare enrollment, education
+      benefits, and more. Many veterans overseas have lost or never received their DD214.</p>
+
+      <h3 style="margin-top:28px;">How to Obtain Your DD214</h3>
+      <ul class="dd214-steps">
+        <li>
+          <div class="step-num">1</div>
+          <div class="step-text"><strong>Online Request:</strong> Visit the National Archives
+          <em>milConnect</em> portal at <strong>milConnect.dmdc.osd.mil</strong> — fastest method,
+          often delivered within days via email.</div>
+        </li>
+        <li>
+          <div class="step-num">2</div>
+          <div class="step-text"><strong>Standard Form 180:</strong> Submit an SF-180 request by
+          mail or fax to the National Personnel Records Center (NPRC) in St. Louis, MO. Processing
+          can take several weeks.</div>
+        </li>
+        <li>
+          <div class="step-num">3</div>
+          <div class="step-text"><strong>Contact Your State VA:</strong> Many state VA offices can
+          assist with DD214 retrieval for veterans within their jurisdiction.</div>
+        </li>
+        <li>
+          <div class="step-num">4</div>
+          <div class="step-text"><strong>Expedited Email Delivery:</strong> Through our partner
+          resources, veterans may access expedited DD214 retrieval services with email delivery —
+          essential for overseas veterans who need to file urgently.</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="dd214-cta">
+      <h3>Need Help Getting Your DD214?</h3>
+      <p>We guide veterans — including expats living abroad — through the process of obtaining,
+      verifying, and using their DD214 to initiate or reopen VA disability claims.</p>
+      <p>A missing or incorrect DD214 can delay your claim by months. Let us help you get it right
+      the first time.</p>
+      <p style="color:#94a3b8;font-size:13px;margin-top:20px;">Common DD214 uses:</p>
+      <ul style="color:#cbd5e1;font-size:14px;padding-left:18px;line-height:2;">
+        <li>VA Disability Claims</li>
+        <li>VA Healthcare Enrollment</li>
+        <li>GI Bill &amp; Education Benefits</li>
+        <li>Home Loan Guaranty (VA Loan)</li>
+        <li>Veterans Preference (Federal Jobs)</li>
+        <li>State &amp; Local Veterans Benefits</li>
+      </ul>
+      <a class="btn-dd214" href="#contact">Request DD214 Guidance</a>
+    </div>
   </div>
 </section>
 
